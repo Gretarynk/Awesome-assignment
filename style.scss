@@ -395,15 +395,15 @@ gap: 30px;
     }
 }
 footer{
-    background-color: color.$footercolor;
+    background: color.$footercolor;
 }
  .boxfoot{
     
-    @include stylebox.marginmain;
+    width:100%;
     display:grid;
     grid-template-columns: 1fr 2fr 1fr;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     padding-top:40px
  }
  .boxlogofooter{
@@ -454,18 +454,37 @@ li{
     justify-content: space-between;
     ul{
         list-style: none;
+        padding-left: 0;
+        
     }
 
     h3{
         text-align: left;
         padding-bottom: 60px;
+        font-size:20px ;
     }
     .line1{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        align-items: flex-start;
         width: 300px;
+        
     }
+    li{
+        margin:30px;
+    }
+    a{
+        text-decoration: none;
+        color:color.$textcolor1;
+        font-size: 16px;
+       
+        
+        &:hover{
+            color:#647B64;
+        }
+
+    };
  }
 
    
