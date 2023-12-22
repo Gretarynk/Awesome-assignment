@@ -1,0 +1,92 @@
+@use "color";
+@use "stylebox";
+
+.two{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+.box2{
+    @include stylebox.flexposition1();
+   
+   @include stylebox.marginmain;
+    position:relative;
+  
+.horange{
+    color:color.$secondcontentcolor;
+    font-family: color.$fonttype;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.hgreen{
+    color:color.$textcolor1;
+    font-family: color.$fonttype;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+}
+.textbox2{
+    margin:20px;
+}
+.but{
+    @include stylebox.buttonstyle();
+    @include stylebox.flexposition1();
+    padding:15px;
+    margin:20px;
+}
+.start{
+    @include stylebox.starbuton();
+}
+.boxtransport{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+}
+.textbox2{
+    padding-top: 0px;
+    padding-bottom: 30px;
+
+}
+.gradientbox{
+    position: absolute;
+    left:-10%;
+    top:9px;
+    
+}
+
+.boxtrans{
+    width:288px;
+    height:237px;
+    padding:30px;
+    margin: 10px;
+    border-radius: 5px;
+    &:hover{
+        background-color: #FEFEFE;
+        .serviceboxfoto {background-color: #c8d5c8;
+        box-shadow: 0px 3px 5px color.$textcolor2;}
+        
+    
+       
+
+    
+    }
+
+    .serviceboxfoto{
+        width: 48px;
+        height:48px;
+        border-radius: 5px;
+        background-color:color.$white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+     
+       
+    }
+
+
+}

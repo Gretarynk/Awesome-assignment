@@ -1,0 +1,36 @@
+@use "color";
+@use "stylebox";
+
+.header {
+    @include stylebox.flexposition1();
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right:auto;
+    
+    .logo img {
+        max-width: 138.436px;
+        max-height: 33px;
+       
+
+    }
+
+    .logo {
+        @include stylebox.flexposition1();
+        
+    }
+.meniu{
+    margin-left: 30px;
+    margin-left: 30px;
+   & a:hover{
+    color:#647B64;
+    
+    transition: ease 0.3s;
+   }
+}
+.register{
+    background-color: #647B64
+}
+}

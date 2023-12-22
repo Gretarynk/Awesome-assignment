@@ -1,0 +1,71 @@
+@use "color";
+@use "stylebox";
+
+
+.three{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:40px;
+    margin-bottom:40px;
+    position:relative;
+}
+    .box3{
+       
+        .titul{
+            text-align: center;
+        }
+        .horange{
+            @include stylebox.headerorange;
+            padding-bottom: 10px;
+        }
+        .hgreen{
+            @include stylebox.headergreen;
+
+        }
+        .boxtriple{
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: center;
+            gap: 30px;
+            margin-left:5%;
+            margin-right:5%;
+            margin-bottom: 20px;
+            
+        }
+        .cont{
+            background-color:color.$white;
+            border-radius:10px;
+            padding: 49px;
+            margin: 10px;
+           background-image:linear-gradient(0deg, rgba(231,229,229,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%) ;
+
+          
+        }
+        .cont h2{
+            padding-top: 22px;
+            
+
+        }
+        #otra{
+            background-color: color.$maincontentcolor;
+            border-radius:10px;
+            padding: 49px;
+            margin: 10px;
+        }
+
+       
+    
+    }
+
+    .dotbox{
+        position:absolute;
+        top:251px;
+    }
+    .backbox{
+        position: absolute;
+        right: -20%;
+    bottom: -26px;
+    
+    }

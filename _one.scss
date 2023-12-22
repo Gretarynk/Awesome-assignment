@@ -1,0 +1,63 @@
+
+@use "color";
+@use "stylebox";
+
+.one{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.box1 {
+    @include stylebox.flexposition1();
+margin: 30px;
+gap: 30px;
+    .boxcontent {
+        max-width: 50%;
+        margin: 30px;
+        position: relative;
+        
+        font-family: color.$fonttype;
+        color: color.$textcolor1;
+    
+.textbox{
+   
+    margin:20px;
+
+}
+        p {
+            color: color.$textcolor2;
+            padding-top: 24px;
+            padding-bottom: 15px
+        }
+
+        .but {
+            @include stylebox.flexposition1();
+            @include stylebox.buttonstyle();
+            padding:15px;
+    margin:20px;
+        }
+
+        .start {
+
+            @include stylebox.starbuton();
+        }
+.elipse{
+    position: absolute;
+    right: 45%;
+}
+
+    }
+
+}
+.illust {
+    position: relative;
+    margin: 10px 30px;
+   
+
+    .behind {
+        position: absolute;
+        right: 33%;
+    top: 16%;
+    }
+}
