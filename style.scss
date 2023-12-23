@@ -51,6 +51,7 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom:140px;
   
 }
 .box1 {
@@ -76,7 +77,7 @@ gap: 30px;
             padding-bottom: 15px
         }
 
-        .but {
+        button {
             @include stylebox.flexposition1();
             @include stylebox.buttonstyle();
             padding:15px;
@@ -110,6 +111,10 @@ gap: 30px;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-top:40px;
+    margin-bottom:140px;
+    padding-left: 40px;
+    padding-right: 40px;
    
 }
 .box2{
@@ -134,7 +139,7 @@ gap: 30px;
 .textbox2{
     margin:20px;
 }
-.but{
+button{
     @include stylebox.buttonstyle();
     @include stylebox.flexposition1();
     padding:15px;
@@ -201,7 +206,9 @@ gap: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-top:40px;
-    margin-bottom:40px;
+    margin-bottom:140px;
+    padding-left: 40px;
+    padding-right: 40px;
     position:relative;
 }
     .box3{
@@ -255,7 +262,7 @@ gap: 30px;
 
     .dotbox{
         position:absolute;
-        top:251px;
+        top:61%;
     }
     .backbox{
         position: absolute;
@@ -266,10 +273,12 @@ gap: 30px;
 
     .four{
         max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-        margin: top 120px;
-        margin-bottom:40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:40px;
+    margin-bottom:140px;
+    padding-left: 40px;
+    padding-right: 40px;
    
     }
     .box4{
@@ -300,7 +309,7 @@ gap: 30px;
             padding-right: 40px;
             
         }
-        .but{
+        button{
             @include stylebox.buttonstyle();
             @include stylebox.flexposition1();
             padding:15px;
@@ -310,9 +319,17 @@ gap: 30px;
             @include stylebox.starbuton();
         }
     }
-
+.five{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:40px;
+    margin-bottom:130px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
     .box5{
-        @include stylebox.marginmain;
+        
 
 .boxtitletop{
     @include stylebox.flexposition1;
@@ -360,6 +377,9 @@ gap: 30px;
         .scrollfoto{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+           
+           
         }
 
     }
@@ -368,7 +388,6 @@ gap: 30px;
 
     padding: 30px;
     background-image:linear-gradient(358deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0.00) 25.62%, rgba(100, 123, 100, 0.00) 98.53%) ;
-    display: flex;
     width:360px;
     display: flex;
     flex-direction: column;
@@ -397,6 +416,8 @@ footer{
     margin-top: 126px;
     margin-left:auto;
     margin-right:auto;
+    padding-left: 40px;
+    padding-right: 40px;
 }
  .boxfoot{
     
@@ -405,7 +426,9 @@ footer{
     grid-template-columns: 1fr 2fr 1fr;
     justify-content: space-between;
     align-items: start;
-    padding-top:40px
+    padding-top:40px;
+    padding-left: 30px;
+
  }
  .boxlogofooter{
     display: flex;
@@ -420,10 +443,6 @@ footer{
     .logo {
         display: flex;
         align-items: center;
-       
-       
-        
-        
     }
 .ftext{
     row-gap:10px;
@@ -447,21 +466,19 @@ li{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
-    gap:37px;
+   padding-left: 40px;
+   padding-right: 40px;
  }
  .line{
     display: flex;
     justify-content: space-between;
-    ul{
-        list-style: none;
-        padding-left: 0;
-        
-    }
+    align-items: flex-start;
+    color:color.$textcolor2;
+  
 
     h3{
         text-align: left;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
         font-size:20px ;
     }
     .line1{
@@ -470,22 +487,63 @@ li{
         justify-content: space-between;
         align-items: flex-start;
         width: 300px;
+       
         
     }
-    li{
-        margin:30px;
-    }
+   
     a{
         text-decoration: none;
         color:color.$textcolor1;
         font-size: 16px;
-       
-        
+        padding:10px;
         &:hover{
-            color:#647B64;
+            color:#ce7f11;
+            
         }
 
-    };
+    }
  }
+
+.boxformlast{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-content: flex-start;
+
+    input[type="email"]{
+        width:283px;
+        height: 113px;
+        border: none;
+        border-radius: 5px;
+        text-align: left;
+       margin-bottom: 30px;
+       padding: 15px;
+       
+       }
+        
+        
+    }
+    label[for="Email"]{
+        font-size: 20px;
+        color: color.$textcolor1;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-bottom: 30px;
+
+    }
+    input[type="submit"]{
+        width:283px;
+        height: 56px;
+        color:white;
+        background-color: color.$maincontentcolor;
+        border: none;
+        text-align: left;
+        padding: 15px;
+        margin-top: 10px;
+
+    }
+
+}
 
    
